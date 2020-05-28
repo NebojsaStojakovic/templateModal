@@ -1,0 +1,107 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#hero {
+  background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.3)), url('https://images.pexels.com/photos/277253/pexels-photo-277253.jpeg');
+  height: 600px;
+  background-size: cover;
+  color: white;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > h1 {
+  margin-top: 15px;
+  font-size: 30px;
+
+}
+nav > ul {
+  display: flex;
+  list-style: none;
+  margin-top: 15px;
+}
+nav > ul > li {
+  margin: 0 1rem;
+  font-weight: 700;
+  font-size: 20px;
+}
+.content {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 100px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.content button {
+  font-size: 2rem;
+  color: #fff;
+  background-color: #3371d6;
+  border: none;
+  padding: .5rem 2rem;
+  cursor: pointer;
+  margin-top: 100px;
+  transition: all .3s ease;
+}
+
+.content button:hover {
+  background-color: #204582;
+}
+.modal {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal.hidden {
+  display: none;
+}
+.modal__contents {
+  background-color: white;
+  padding: 2rem 4rem;
+}
+.modal__contents input[type=email] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 15px;
+}
+.modal__contents button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #3371d6;
+  border: none;
+  color: white;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+.modal__contents button:hover {
+  background-color: #204582;
+}
+
+.modal__close {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -2rem;
+  margin-top: -1rem;
+  cursor: pointer;
+}
